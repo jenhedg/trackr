@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function BtnTimer() {
-  const [date, setDate] = useState();
+function BtnTimer(props) {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
@@ -54,10 +53,9 @@ function BtnTimer() {
     <div>
       <button className="btnTimer" onClick={handleClick}>{isActive ? 'Stop' : 'Start'}</button>
       <button className="button" onClick={handleReset}>Reset</button>
-      <div>Segundos:{seconds}</div>
-      <div>Minutos:{minutes}</div>
-      <div>Hours:{hours}</div>
-      <div>{date}</div>
+      <div>
+        <span>Time:{hours}:{minutes}:{seconds}</span>
+      </div>
     </div>
   );
 }

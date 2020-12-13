@@ -1,11 +1,11 @@
 import React from "react";
-import BtnTimer from "../BtnTimer/BtnTimer";
+import TimeEntry from "../TimeEntry/TimeEntry";
 import "../../index.scss";
 
 function App() {
   return (
     <div className="App">
-      <BtnTimer></BtnTimer>
+      <TimeEntry></TimeEntry>
     </div>
   );
 }
