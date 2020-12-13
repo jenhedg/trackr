@@ -1,0 +1,10 @@
+{
+  "extends": ["react-app", "eslint:recommended"],
+  "rules": {
+    "no-trailing-spaces": "error",
+    "react/prop-types": 0,
+    "no-console": 1,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhuaustive-deps": 0
+  }
+}

@@ -1,0 +1,41 @@
+.container {
+  background-color: #5ca8e6;
+  background-image: url(../../shared/images/background.jpg);
+  background-size: cover;
+  color: $white;
+  overflow: hidden;
+  padding: $spacer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+.header .header-title {
+  font-size: 2.5em;
+  font-family: $serifFont;
+  font-weight: bold;
+  text-align: center;
+  margin: $spacer / 4 0;
+  text-shadow: $textShadow;
+
+  @include md {
+    font-size: $titleFontSize;
+    padding: $spacer 0;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  // min-height: 150px;
+  font-family: $sansFont;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
